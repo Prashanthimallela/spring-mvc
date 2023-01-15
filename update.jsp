@@ -13,7 +13,7 @@
 		<input type = "text" value = ${name} name = prodName /><br/><br/>
 		<input type = "text" value = ${desc} name = prodDesc /><br/><br/>
 		<input type = "number" value = ${price} name = price /><br/><br/>
-		<input type = "submit" value = "Update"/>
+		<input type = "submit" value = "updateProduct"/>
 	</form>
 	<h3 style="color:red">${updateMsg}</h3>
 </body>
