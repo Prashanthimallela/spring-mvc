@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.training.springmvc.dao.ProductDao;
+import com.training.springmvc.model.Cart;
 import com.training.springmvc.model.Product;
 @Service
 public class ProductServiceImpl implements ProductService {
@@ -36,5 +37,11 @@ public class ProductServiceImpl implements ProductService {
     public boolean updateProduct(Product product) {
 		
 		return productDao.updateProduct(product);
+	}
+    
+    public List<Cart> getAllCarts() {
+        List<Cart> cartList = productDao.getCart();
+		
+		return cartList;
 	}
 }
